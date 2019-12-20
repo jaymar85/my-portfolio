@@ -1,25 +1,14 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .navbar {
     display: flex;
-    position: relative;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #333; */
     color: white;
     font-family: 'Varela Round', sans-serif;
     background-color: rgba(51, 51, 51, .8);
-    /* position: sticky; */
+    /* position: sticky;  */
     z-index: 1000;
+    width: 100%;
     top: 0px;
 }
 
@@ -38,6 +27,20 @@ body {
     height: 100%;
 }
 
+.navbar-links.active {
+    position: absolute;
+    top: 46px;
+    height: auto;
+    background-color: rgba(51, 51, 51, .8); 
+}
+
+/* .navbar-links.active {
+    position: absolute;
+    top: 46px;
+    height: auto;
+    background-color: rgba(51, 51, 51, .8); 
+} */
+
 .navbar-links ul {
     display: flex;
     margin: 0;
@@ -48,6 +51,7 @@ body {
     font-style: normal;
     font-size: 13px;
     letter-spacing: 0.12em;
+    /* background-color: rgba(51, 51, 51, .8); */
 }
 
 .navbar-links li {
@@ -55,7 +59,7 @@ body {
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    /* background-color: rgba(85, 85, 85, 0.8); */
 }
 
 .navbar-links li a {
@@ -63,6 +67,10 @@ body {
     text-decoration: none;
     color: white;
     padding: 1rem;
+}
+
+.navbar-links li a:hover {
+    color: #FF9900;
 }
 
 .toggle-button {

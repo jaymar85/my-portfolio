@@ -3,8 +3,14 @@
     <head>
 
       <link rel="stylesheet" href="background_styles.css">
+      <link rel="stylesheet" href="/css/root.css">
       <link rel="stylesheet" href="/css/nav.css">
       <link rel="stylesheet" href="/css/header.css">
+      <link rel="stylesheet" href="/css/about.css">
+      <link rel="stylesheet" href="/css/skills.css">
+      <link rel="stylesheet" href="/css/projects.css">
+      <link rel="stylesheet" href="/css/contact.css">
+      <link rel="stylesheet" href="/css/footer.css">
 
       <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -21,10 +27,10 @@
           <div class="navbar-links">
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
       </nav>
@@ -36,8 +42,40 @@
         <div id="icons">
           <a href="https://www.linkedin.com/in/jeremymark/" target=”_blank”><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTMwLjE3NTI1LDUwLjE2NjY3aDAuMTg2MzN2MGM5Ljk5NzUsMCAxNi4yMjE3NSwtNy4xNjY2NyAxNi4yMjE3NSwtMTYuMTI1Yy0wLjE4NjMzLC05LjE1NTQyIC02LjIyNDI1LC0xNi4xMjUgLTE2LjAzMTgzLC0xNi4xMjVjLTkuODA3NTgsMCAtMTYuMjE4MTcsNi45Njk1OCAtMTYuMjE4MTcsMTYuMTI1YzAsOC45NTgzMyA2LjIyMDY3LDE2LjEyNSAxNS44NDE5MiwxNi4xMjV6TTE0LjMzMzMzLDYwLjkxNjY3aDMyLjI1djkzLjE2NjY3aC0zMi4yNXpNMTU3LjY2NjY3LDk0Ljk1ODMzYzAsLTE4LjgwMTc1IC0xNS4yMzk5MiwtMzQuMDQxNjcgLTM0LjA0MTY3LC0zNC4wNDE2N2MtMTAuOTM5OTIsMCAtMjAuNjQ3MTcsNS4xODE1IC0yNi44NzUsMTMuMjAxdi0xMy4yMDFoLTMyLjI1djkzLjE2NjY3aDMyLjI1di01My43NXYwYzAsLTcuOTE1NTggNi40MTc3NSwtMTQuMzMzMzMgMTQuMzMzMzMsLTE0LjMzMzMzYzcuOTE1NTgsMCAxNC4zMzMzMyw2LjQxNzc1IDE0LjMzMzMzLDE0LjMzMzMzdjUzLjc1aDMyLjI1YzAsMCAwLC01My45MTEyNSAwLC01OS4xMjV6Ij48L3BhdGg+PC9nPjxwYXRoIGQ9IiIgZmlsbD0ibm9uZSI+PC9wYXRoPjwvZz48L3N2Zz4="></a>
           <a href="https://github.com/jaymar85" target=”_blank”><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgaWQ9Im9yaWdpbmFsLWljb24iIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik02MS4yMDEwNCwxNjEuMTE1ODRjMi40NDU4NCwtMS4wNTI2NCA0LjE1ODk2LC0zLjQ4NDcyIDQuMTU4OTYsLTYuMzE1ODR2LTE4LjU3NmMwLC0wLjY3NzY4IDAuMDU1MDQsLTEuMzgyODggMC4xNDEwNCwtMi4wOTg0Yy0wLjA0ODE2LDAuMDEzNzYgLTAuMDkyODgsMC4wMjQwOCAtMC4xNDEwNCwwLjAzNDRjMCwwIC0xMC4zMiwwIC0xMi4zODQsMGMtNS4xNiwwIC05LjYzMiwtMi4wNjQgLTExLjY5NiwtNi4xOTJjLTIuNDA4LC00LjQ3MiAtMy40NCwtMTIuMDQgLTkuNjMyLC0xNi4xNjhjLTEuMDMyLC0wLjY4OCAtMC4zNDQsLTEuNzIgMS43MiwtMS43MmMyLjA2NCwwLjM0NCA2LjUzNiwzLjA5NiA5LjI4OCw2Ljg4YzMuMDk2LDMuNzg0IDYuMTkyLDYuODggMTEuNjk2LDYuODhjOC41NTUyOCwwIDEzLjE0MDgsLTAuNDMgMTUuODk5NjgsLTEuOTA5MmMzLjIxMjk2LC00Ljc3ODE2IDcuNjYwODgsLTguNDEwOCAxMi4zMDgzMiwtOC40MTA4di0wLjA4NmMtMTkuNDk3OTIsLTAuNjI2MDggLTMxLjk1NDE2LC03LjEwNzA0IC0zNy43NTQsLTE3LjExNGMtMTIuNjA3NiwwLjE0NDQ4IC0yMy41ODQ2NCwxLjM5MzIgLTI5Ljg0ODg4LDIuNDMyMDhjLTAuMTk5NTIsLTEuMTI0ODggLTAuMzcxNTIsLTIuMjU2NjQgLTAuNTE5NDQsLTMuMzk1MjhjNi4xODE2OCwtMS4wMTgyNCAxNi42NTk5MiwtMi4yMjU2OCAyOC43MDY4LC0yLjQ1NjE2Yy0wLjM4NTI4LC0wLjk0OTQ0IC0wLjcxODk2LC0xLjkyMjk2IC0xLjAwMTA0LC0yLjkyMDU2Yy0xMi4wNzc4NCwtMC42MTIzMiAtMjIuNTAxMDQsLTAuMTM0MTYgLTI4LjE2MzI4LDAuMzMzNjhjLTAuMDY4OCwtMS4xNDIwOCAtMC4xNjE2OCwtMi4yODA3MiAtMC4xNzU0NCwtMy40MzY1NmM1LjY3MjU2LC0wLjQ2NDQgMTUuODEzNjgsLTAuOTI4OCAyNy41ODE5MiwtMC4zODE4NGMtMC4yNzE3NiwtMS43MiAtMC40NDcyLC0zLjQ3Nzg0IC0wLjQ0NzIsLTUuMzA3OTJjMCwtNS44NDggMi4wNjQsLTEyLjA0IDUuODQ4LC0xNy4yYy0xLjcyLC01Ljg0OCAtNC4xMjgsLTE4LjIzMiAwLjY4OCwtMjIuNzA0YzkuMjg4LDAgMTUuODI0LDQuNDcyIDE4LjkyLDcuMjI0YzUuODQ0NTYsLTIuNDExNDQgMTIuMzgwNTYsLTMuNzg3NDQgMTkuNjA0NTYsLTMuNzg3NDRjNy4yMjQsMCAxMy43NiwxLjM3NiAxOS4yNjQsMy43ODRjMy4wOTYsLTIuNzUyIDkuNjMyLC03LjIyNCAxOC45MiwtNy4yMjRjNS4xNiw0LjgxNiAyLjQwOCwxNy4yIDAuNjg4LDIyLjcwNGMzLjc4NCw1LjE2IDUuODQ4LDExLjAwOCA1LjUwNCwxNy4yYzAsMS42NjQ5NiAtMC4xNTQ4LDMuMjcxNDQgLTAuMzc4NCw0Ljg0Njk2YzEyLjAzNjU2LC0wLjU5MTY4IDIyLjQ1Mjg4LC0wLjExNjk2IDI4LjIyMTc2LDAuMzUwODhjLTAuMDA2ODgsMS4xNTkyOCAtMC4xMTM1MiwyLjI5MTA0IC0wLjE3NTQ0LDMuNDM2NTZjLTUuNzQ4MjQsLTAuNDc0NzIgLTE2LjQyNiwtMC45NjMyIC0yOC43NTQ5NiwtMC4zMDYxNmMtMC4zMDYxNiwxLjE1NTg0IC0wLjY3NzY4LDIuMjgwNzIgLTEuMTE4LDMuMzcxMmMxMi4xOTgyNCwwLjE1ODI0IDIyLjkyNzYsMS4zMzgxNiAyOS40MDUxMiwyLjM3MDE2Yy0wLjE0NzkyLDEuMTQyMDggLTAuMzE5OTIsMi4yNzM4NCAtMC41MTk0NCwzLjM5NTI4Yy02LjU3NzI4LC0xLjA1MjY0IC0xNy43ODgyNCwtMi4yODQxNiAtMzAuNTQzNzYsLTIuMzQ2MDhjLTUuNzI3Niw5LjkwMDMyIC0xNy45NTY4LDE2LjM1NzIgLTM3LjA3Mjg4LDE3LjExMDU2djAuMTA2NjRjOC45NDQsMCAxNy4yLDEzLjQxNiAxNy4yLDIyLjcwNHYxOC41NzZjMCwyLjgzMTEyIDEuNzEzMTIsNS4yNjMyIDQuMTU4OTYsNi4zMTU4NGMzMS41MTM4NCwtMTAuNDMwMDggNTQuMzIxMDQsLTQwLjE1MTY4IDU0LjMyMTA0LC03NS4xMTU4NGMwLC00My42MjYwOCAtMzUuNDkwNDgsLTc5LjEyIC03OS4xMiwtNzkuMTJjLTQzLjYyOTUyLDAgLTc5LjEyLDM1LjQ5MzkyIC03OS4xMiw3OS4xMmMwLDM0Ljk2NDE2IDIyLjgwNzIsNjQuNjg1NzYgNTQuMzIxMDQsNzUuMTE1ODR6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="></a>
-        </div>  
+        </div> 
+        <!-- <div class="indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> -->
       </header>
+      <section id="about">
+        <h3>About Me</h3>
+        <h2>Introduction</h2>
+        <div id="content-container"> 
+          <div id="img-div">
+          <img src="/img/Untitled 2.png"/>
+          </div>
+          <div id="text-div">
+          <p>I am a former Financial Services professional transitioning to a career in web development. I have always loved computers, problem solving and bringing new ideas to life. I’m a continuous learner and strive to understand the latest technologies to be better equipped and informed. I’m a hard worker that has a desire for personal growth.  I seek to work for a dynamic company with my current skills set to continue advancing as a well rounded programmer. In my free time, I enjoy spending time with close friends and family, going hiking, ping pong, working out, and traveling.</p>
+          </div>
+        </div>
+        <button>My Resume</button>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+      </section>
+      <section id="projects">
+          <h3>Projects</h3>
+      </section>
+      <section id="contact">
+          <h3>Contact Me</h3>
+      </section>
+      <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, ad?</p>
+      </footer>
       <script src="/js/header.js" defer></script>
       <script src="/js/nav.js" defer></script>
     </body>
