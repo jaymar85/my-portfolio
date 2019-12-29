@@ -2,9 +2,38 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* CSS Smooth Scroll */
+    /* Src: https://www.youtube.com/watch?v=y9nlfqT4s9s */
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
+
+}
+
+.to-top-btn {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    display: none;
+    bottom: 52px;
+    right: 50px;
+    background-color: #222;   
+    color: white; 
+    text-align: center;
+    z-index: 9;
+    opacity: 1;
+    /* filter: alpha(opacity=00); */
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-top: 8px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+}
+
+.to-top-btn:hover, .to-top-btn:focus {
+    background-color: #4E5354;
 }
