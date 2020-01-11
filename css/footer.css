@@ -2,6 +2,18 @@ footer {
     padding: 20px;
     text-align: center;
     height: 30vh;
-    background-color: rgba(38, 38, 38, 0.8);
+    background-color: rgba(38, 38, 38);
 }
 
+.row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+footer li {
+    color: rgb(122, 122, 122);
+    font-family: sans-serif;
+    font-weight: 100;
+    /* font-weight: lighter; */
+}
