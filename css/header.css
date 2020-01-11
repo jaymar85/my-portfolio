@@ -61,12 +61,15 @@ span {
 }
 
 #icons ul li i{
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     font-size: 40px;
+    transition: 0.25s;
 }
 
 #icons ul li i:hover {
     transform: scale(1.15);
     color: #FF9900;
+    transition: 0.25s;
 }
