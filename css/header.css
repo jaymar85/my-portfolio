@@ -57,14 +57,14 @@ span {
 }
 
 #icons ul li {
-    margin: 0 15px;
+    margin: 0 13px;
 }
 
 #icons ul li i{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    font-size: 40px;
+    font-size: 34px;
     transition: 0.25s;
 }
 
