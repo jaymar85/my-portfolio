@@ -51,23 +51,3 @@
     text-align: left;
     padding: 18px;
 }
-
-#about button {
-    text-decoration: none;
-    border: #FF9900 2px solid;
-    padding: 10px 20px;
-    margin-top: 40px;
-    color: #FF9900;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-}
-
-#about button:hover {
-    background-color: #FF9900;
-    color: #fff;
-    cursor: pointer;
-}

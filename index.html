@@ -13,10 +13,12 @@
       <link rel="stylesheet" href="/css/header.css">
       <link rel="stylesheet" href="/css/about.css">
       <link rel="stylesheet" href="/css/skills.css">
+      <link rel="stylesheet" href="/css/resume.css">
       <link rel="stylesheet" href="/css/projects.css">
       <link rel="stylesheet" href="/css/contact.css">
       <link rel="stylesheet" href="/css/footer.css">
 
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -55,6 +57,7 @@
           </ul>  
         </div> 
       </header>
+      <!-- About me -->
       <section id="about">
         <h3>About Me</h3>
         <h2>Introduction</h2>
@@ -65,52 +68,37 @@
           <div id="text-div">
           <p>I am a former Financial Services professional transitioning to a career in web development. I have always loved computers, problem solving and bringing new ideas to life. I’m a continuous learner and strive to understand the latest technologies to be better equipped and informed. I’m a hard worker that has a desire for personal growth.  I seek to work for a dynamic company with my current skills set to continue advancing as a well rounded programmer. In my free time, I enjoy spending time with close friends and family, going hiking, ping pong, working out, and traveling.</p>
           </div>
-        </div>
-        <button>My Resume</button>
+        </div> 
       </section>
+      <!-- Skills -->
       <section id="skills">
         <h3>Skills</h3>
         <h2>Things I have learned</h2>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </section>
+      <!-- Resume  -->
+      <div class="pimg1">
+        <div class="ptext">
+          <h2>Check out my resume!</h2>          
+        </div>
+        <div class="resume-btn">
+          <button>Grab A Copy</button>
+        </div>
+      </div>
+      <!-- Projects -->
       <section id="projects">
           <h3>Projects</h3>
           <h2>Things I have built</h2>
       </section>
+      <!-- Contact -->
       <section id="contact">
-          <!-- <h3>Contact Me</h3>
-          <ul>
-            <li>
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABmJLR0QA/wD/AP+gvaeTAAABEElEQVRoge2bQWoCQRBFX4JbSQ7grD27QXCVBBfeSIWZC5jFZKEQBqlqu+Of/6CW1V2PKnpVDcZM0QFbYAAuD44B2AHrKmZ/0AGniQIfFeffu6uzDRRbKj6iRb9EExlHbJnIzzAAb5HEjPAlkVuCUO2vpav47ywKnpWZlnsoMlGz67CF1bGwOhZWx8LqWFgdC6tjYXUsrI6F1bGwOhZWx8LqWFgdC6tjYXUsrI6F1bGwOhZWp+SeVuvNvLuYXYdbCH8CK8YV4O8G94eJrv6urs7oEueEmN1IZ4h25ovbka7a4WddEO+B90hiZqQPidws+xaXrhk/XNT+73Dk9uGrSsf44aKfKLBU9MCGhrLmGfgBjojWGA8+58QAAAAASUVORK5CYII=">
-              <p>817-378-7895</p>
-            </li>
-            <li>
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABBCAYAAACO98lFAAAABmJLR0QA/wD/AP+gvaeTAAAC6klEQVR4nO3aPYwVVRjG8R8fu2hI/FpFQIzRLcAQCg2QaCAxxGBishWhoNDSEksLG4stKDWhUSoowcpIIDbqLhRAYQJEEkBjBBIgrpus4idwKc6ddSX37pyZO3dmNjn/5GnuPec97/vkzHtn5h4SiUQikUgkEonFWBY5bhQv4LEh5lI1c/gJ/w4aaAwf4w46S1C/d/N/qqwBa3C5BYVUoR+xrowJUy1Ivkp9W9SAbS1IehjaXsSElXgfv7Ug8Sr0Dz7B6iImZLyIEy0oYhCdwuYyxT/MBK61oKAimhV28/IqDMh4QthS91pQYJ6OCr9uQ+N1XGhBob30A96qqtC8O8kRfIg/aiouT39jEo8OWPf/mMR78s14CScrLqiopsU1vgl8EDFunoPdBabwcsT4vbhVsoiyim1863GsO+dgRC3zZCZ0hN/YA1iVM6fOxhnT+LJ7nbkF80qbkOkK3oyYuwMXCxRURFexOyKHV3C2x/yBTejgPo7gmZz5I8L19+ciBRVRthsfyVl3dXfc3T5xKjEh04y4xjmOr3Ji5alI4/s5J1alJmT6Bpsi4u3F7ciYmX4V1/iew+eRMYdiQkfY8h/Jb5xP4lPhksqLWbbxNWZCpsvYFRF7J77vE2PQxte4CR3/Nc6nc+JnjfOv7ryqGl8rTMh0E/si1tkkXCIxfWUPbgyYV60mZPoaG4ss3IMija+UCZU+a/fgDXwnNM7RgnOzxndJ2AW1U9VOWKjzeC1y/Vdxbgg5NLITFrIFp4XGOdZnzOPC88dZbK0pr1pNINxhviM8W7z70HcTwsua/VhRZ1J1m5CxFodxXLhv+BJf4PkmklnZxKILeLurRmlqJ7SKZIJkApIJSCYgmYBkApIJSCYgmYD+JszUmkV9/NLrw34mTA8xkSaZKjJ4ueG81GhSZ8QfXp1n3NI7otNP14TzV6VYi0OW7im2OXyGZxcrssjZ5g3Cv0hLhVlcF/7TSCQSiUQikUgkBuABlVZLGWn7C+gAAAAASUVORK5CYII=">
-              <p>jermark851@gmail.com</p>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/jeremymark/" target=”_blank”><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNzUiIGhlaWdodD0iNzUiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTI0LDRINkM0Ljg5NSw0LDQsNC44OTUsNCw2djE4YzAsMS4xMDUsMC44OTUsMiwyLDJoMThjMS4xMDUsMCwyLTAuODk1LDItMlY2QzI2LDQuODk1LDI1LjEwNSw0LDI0LDR6IE0xMC45NTQsMjJoLTIuOTUgdi05LjQ5MmgyLjk1VjIyeiBNOS40NDksMTEuMTUxYy0wLjk1MSwwLTEuNzItMC43NzEtMS43Mi0xLjcyYzAtMC45NDksMC43Ny0xLjcxOSwxLjcyLTEuNzE5YzAuOTQ4LDAsMS43MTksMC43NzEsMS43MTksMS43MTkgQzExLjE2OCwxMC4zOCwxMC4zOTcsMTEuMTUxLDkuNDQ5LDExLjE1MXogTTIyLjAwNCwyMmgtMi45NDh2LTQuNjE2YzAtMS4xMDEtMC4wMi0yLjUxNy0xLjUzMy0yLjUxNyBjLTEuNTM1LDAtMS43NzEsMS4xOTktMS43NzEsMi40MzdWMjJoLTIuOTQ4di05LjQ5MmgyLjgzdjEuMjk3aDAuMDRjMC4zOTQtMC43NDYsMS4zNTYtMS41MzMsMi43OTEtMS41MzMgYzIuOTg3LDAsMy41MzksMS45NjYsMy41MzksNC41MjJWMjJ6Ij48L3BhdGg+PC9zdmc+"></a>
-              <p>Linkedin</p>
-            </li>
-            <li>
-              <a href="https://github.com/jaymar85" target=”_blank”><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNzUiIGhlaWdodD0iNzUiCnZpZXdCb3g9IjAgMCAzMCAzMCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij4gICAgPHBhdGggZD0iTTE1LDNDOC4zNzMsMywzLDguMzczLDMsMTVjMCw1LjYyMywzLjg3MiwxMC4zMjgsOS4wOTIsMTEuNjNDMTIuMDM2LDI2LjQ2OCwxMiwyNi4yOCwxMiwyNi4wNDd2LTIuMDUxIGMtMC40ODcsMC0xLjMwMywwLTEuNTA4LDBjLTAuODIxLDAtMS41NTEtMC4zNTMtMS45MDUtMS4wMDljLTAuMzkzLTAuNzI5LTAuNDYxLTEuODQ0LTEuNDM1LTIuNTI2IGMtMC4yODktMC4yMjctMC4wNjktMC40ODYsMC4yNjQtMC40NTFjMC42MTUsMC4xNzQsMS4xMjUsMC41OTYsMS42MDUsMS4yMjJjMC40NzgsMC42MjcsMC43MDMsMC43NjksMS41OTYsMC43NjkgYzAuNDMzLDAsMS4wODEtMC4wMjUsMS42OTEtMC4xMjFjMC4zMjgtMC44MzMsMC44OTUtMS42LDEuNTg4LTEuOTYyYy0zLjk5Ni0wLjQxMS01LjkwMy0yLjM5OS01LjkwMy01LjA5OCBjMC0xLjE2MiwwLjQ5NS0yLjI4NiwxLjMzNi0zLjIzM0M5LjA1MywxMC42NDcsOC43MDYsOC43Myw5LjQzNSw4YzEuNzk4LDAsMi44ODUsMS4xNjYsMy4xNDYsMS40ODFDMTMuNDc3LDkuMTc0LDE0LjQ2MSw5LDE1LjQ5NSw5IGMxLjAzNiwwLDIuMDI0LDAuMTc0LDIuOTIyLDAuNDgzQzE4LjY3NSw5LjE3LDE5Ljc2Myw4LDIxLjU2NSw4YzAuNzMyLDAuNzMxLDAuMzgxLDIuNjU2LDAuMTAyLDMuNTk0IGMwLjgzNiwwLjk0NSwxLjMyOCwyLjA2NiwxLjMyOCwzLjIyNmMwLDIuNjk3LTEuOTA0LDQuNjg0LTUuODk0LDUuMDk3QzE4LjE5OSwyMC40OSwxOSwyMi4xLDE5LDIzLjMxM3YyLjczNCBjMCwwLjEwNC0wLjAyMywwLjE3OS0wLjAzNSwwLjI2OEMyMy42NDEsMjQuNjc2LDI3LDIwLjIzNiwyNywxNUMyNyw4LjM3MywyMS42MjcsMywxNSwzeiI+PC9wYXRoPjwvc3ZnPg=="></a>
-              <p>Github</p>
-            </li>
-          </ul> -->
+          <h3>Contact Me</h3>
       </section>
-      <a class="to-top-btn" href="#"><i class="material-icons">arrow_upward</i></a>
-
       <footer>
         <div class="row">
           <div class="social-media">
-            <a class="btn2" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-            <a class="btn2" href="#"><i class="fab fa-github" aria-hidden="true"></i></a>
-            <a class="btn2" href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>  
+            <a class="btn2" href="https://twitter.com/Jeremy66630195" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a class="btn2" href="https://github.com/jaymar85" target=”_blank”><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a class="btn2" href="https://www.linkedin.com/in/jeremymark/" target=”_blank”><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>  
           </div>
           <div class="page-scroll">
             <a href="#"><img id="rocket" src="img/rocket12.png" onMouseOver="showText('Some Text')" onMouseOut="hide();"></a>
@@ -118,11 +106,10 @@
               <p id="to-top-copy" style="opacity: 0">Beam me up, Scotty!</p>
             </div>
           </div>
-          <p>&#169; Jeremy Mark 2019</p>
+          <p>&#169; Jeremy Mark 2020</p>
         </div>
       </footer>
-
-
+      <a class="to-top-btn" href="#"><i class="material-icons">arrow_upward</i></a>
       <!-- JavaScript -->
       <script src="/js/footer.js"></script>
       <script src="/js/header.js" defer></script>
