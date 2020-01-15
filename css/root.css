@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    position: relative;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
     background-color: #222;   
     color: white; 
     text-align: center;
-    z-index: -1;
+    z-index: 1;
     opacity: 1;
     /* filter: alpha(opacity=00); */
     cursor: pointer;
