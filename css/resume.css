@@ -11,13 +11,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 .ptext h2 {
     text-transform: uppercase;
     color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: lighter;
+    font-family: 'Source Sans Pro', 'Varela Round', sans-serif;
+    font-weight: 300 lighter;
     font-size: 30px;
     letter-spacing: 1px;
 }
@@ -29,13 +30,13 @@
     color: #FF9900;
     border: #FF9900 2px solid;
     font-family: 'Lato', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 200;
     text-decoration: none;
     /* text-transform: uppercase; */
     letter-spacing: 1px;
     margin-top: 40px;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .resume-btn button:hover {

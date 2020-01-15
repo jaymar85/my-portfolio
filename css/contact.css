@@ -3,6 +3,7 @@
     text-align: center;
     height: 70vh;
     background: rgb(240, 240, 240);
+    z-index: 0;
 }
 
 #contact h3 {

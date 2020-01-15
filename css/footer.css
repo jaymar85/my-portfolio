@@ -3,6 +3,7 @@ footer {
     text-align: center;
     height: 30vh;
     background-color: rgba(38, 38, 38);
+    z-index: 1000;
 }
 
 .row {
