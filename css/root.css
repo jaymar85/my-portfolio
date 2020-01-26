@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    position: relative;
 }
 
 body {
@@ -23,13 +22,13 @@ body {
     text-align: center;
     z-index: 1;
     opacity: 1;
-    /* filter: alpha(opacity=00); */
+    /* filter: alpha(opacity=00);  */ /* Review */
     cursor: pointer;
     box-sizing: border-box;
     padding-top: 8px;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
-    /* transition-property: background-color, color; */
+    /* transition-property: background-color, color; */ /* Review */
 }
 
 .to-top-btn:hover, .to-top-btn:focus {
