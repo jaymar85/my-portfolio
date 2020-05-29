@@ -1,18 +1,64 @@
 #contact {
-    padding: 20px;
-    text-align: center;
+    background-color: #F0F0F0;
+    /* background: rgb(240, 240, 240); */
     height: 70vh;
-    background: rgb(240, 240, 240);
+    padding-top: 110px;
+    padding-bottom: 70px;
+    text-align: center;
 }
 
-#contact h3 {
+.contact-row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.email-icon i {
+    font-size: 55px;
+    position: relative;
+    margin: 0 auto 25px;
+}
+
+.contact-row h2 {
     color: #FF9900;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-weight: 500;
+    /* font-weight: 500; */
     font-style: normal;
-    font-size: 20px;
+    font-size: 30px;
     letter-spacing: 0.1em;
     line-height: 1em;
-    margin-top: 50px;
+    margin: 0 0 25px;
+}
+
+.contact-row p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    margin: 0 0 25px;
+}
+
+.contact-row a {
+    outline: none;
+}
+
+.contact-row button {
+    background: none;
+    border: 2px #FF9900 solid;
+    color: #FF9900;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.2s ease-in;
+}
+
+.contact-row button:hover {
+    background: #FF9900;
+    color: #fff;
+    cursor: pointer;
 }
